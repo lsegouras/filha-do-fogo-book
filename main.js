@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
       page.dataset.pageNumber = i
 
       const img = document.createElement('img')
-      img.src = `docs/page-${i}.jpg`
+      img.src = `resources/page-${i}.jpg`
       img.alt = `Página ${i}`
 
       page.appendChild(img)
@@ -64,12 +64,12 @@ document.addEventListener('DOMContentLoaded', function () {
     itemsLinks.forEach((link) => {
       link.classList.remove('active')
       if (
-        link.getAttribute('href') === '/docs/front-cover.jpg' &&
+        link.getAttribute('href') === '/resources/front-cover.jpg' &&
         currentPage === 0
       ) {
         link.classList.add('active')
       } else if (
-        link.getAttribute('href') === '/docs/back-cover.jpg' &&
+        link.getAttribute('href') === '/resources/back-cover.jpg' &&
         currentPage === totalPages + 1
       ) {
         link.classList.add('active')
@@ -97,9 +97,9 @@ document.addEventListener('DOMContentLoaded', function () {
     itemsLinks.forEach((link) => {
       link.addEventListener('click', function (e) {
         e.preventDefault()
-        if (this.getAttribute('href') === '/docs/front-cover.jpg') {
+        if (this.getAttribute('href') === '/resources/front-cover.jpg') {
           showPage(0)
-        } else if (this.getAttribute('href') === '/docs/back-cover.jpg') {
+        } else if (this.getAttribute('href') === '/resources/back-cover.jpg') {
           showPage(totalPages + 1)
         } else if (this.dataset.page) {
           showPage(parseInt(this.dataset.page))

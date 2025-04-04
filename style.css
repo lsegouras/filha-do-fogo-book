@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1c897;
+  color: #333;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1c897;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #863718;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #400a0d;
+}
+
+#search-input::-webkit-outer-spin-button,
+#search-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #863718 #f1c897;
+}
+
+#container {
+  display: flex;
+  height: 100vh;
+}
+
+#sidebar {
+  width: 300px;
+  background-color: #400a0d;
+  padding: 15px;
+  overflow-y: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#sidebar h2 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #eda250;
+}
+
+#items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+#items a {
+  color: #eda250;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  font-size: 0.9rem;
+}
+
+#items a:hover,
+#items a.active {
+  background-color: #863718;
+}
+
+#search-container {
+  display: flex;
+  margin-top: 15px;
+  flex-shrink: 0;
+}
+
+#search-input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 0.9rem;
+  background-color: #f1c897;
+  appearance: textfield;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  color: #400a0d;
+}
+
+#search-btn {
+  padding: 8px 12px;
+  background-color: #eda250;
+  color: #f1c897;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+#search-btn:hover {
+  background-color: #c0392b;
+}
+
+#book-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  height: 100vh;
+  background-color: #eda250;
+}
+
+#book {
+  width: auto;
+  max-height: 90vh;
+  height: 90vh;
+  aspect-ratio: 0.9;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#flipbook {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front-cover,
+.back-cover,
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front-cover {
+  z-index: 3;
+}
+
+.page {
+  z-index: 2;
+}
+
+.back-cover {
+  z-index: 1;
+}
+
+.pages {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.page img,
+.front-cover img,
+.back-cover img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+#prev-btn,
+#next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #400a0d;
+  color: #f1c897;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: unset;
+  right: unset;
+}
+
+#prev-btn {
+  left: 250px;
+}
+
+#next-btn {
+  right: 250px;
+}
+
+#prev-btn:hover,
+#next-btn:hover {
+  background: #863718;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  #container {
+    flex-direction: column;
+  }
+
+  #sidebar {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    padding: 10px;
+  }
+
+  #sidebar h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  #items a {
+    padding: 5px 8px;
+    font-size: 0.8rem;
+  }
+
+  #book {
+    height: 60vh;
+    width: 90%;
+  }
+
+  #prev-btn,
+  #next-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  #prev-btn {
+    left: 10px;
+  }
+
+  #next-btn {
+    right: 10px;
+  }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filha do Fogo - Web Book</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <!-- Summary -->
+      <div id="sidebar">
+        <h2>Sumário</h2>
+        <div id="items">
+          <a href="/docs/front-cover.jpg">Capa</a>
+          <a href="#" data-page="4">Créditos</a>
+          <a href="#" data-page="9"
+            >Filha do fogo e os enredos sankofas • Dinha</a
+          >
+          <a href="#" data-page="19">Filha do fogo</a>
+          <a href="#" data-page="25">A primeira vez que fui ao céu</a>
+          <a href="#" data-page="31">Dona da cumbuca</a>
+          <a href="#" data-page="37">O tênis de Obary</a>
+          <a href="#" data-page="45">Afagos</a>
+          <a href="#" data-page="55">Antes que as águas da cabaça seguem...</a>
+          <a href="#" data-page="63">N'anga: a curandeira</a>
+          <a href="#" data-page="69">Muita trovoada é sinal de pouca chuva</a>
+          <a href="#" data-page="77">Com tradição</a>
+          <a href="#" data-page="87"
+            >Quando a Lua não está cheia, as estrelas ficam mais brilhantes</a
+          >
+          <a href="#" data-page="95">Disritmia</a>
+          <a href="#" data-page="103">As sete calcinhas de Jandira</a>
+          <a href="#" data-page="110">Sobre a autora</a>
+          <a href="/docs/back-cover.jpg">Contra-Capa</a>
+        </div>
+
+        <!-- Search Field -->
+        <div id="search-container">
+          <input
+            type="number"
+            id="search-input"
+            placeholder="Ir para página...1 a 112"
+            min="1"
+            max="112"
+          />
+          <button id="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+      <div id="book-container">
+        <!-- Previous Button -->
+        <button id="prev-btn">
+          <i class="fas fa-chevron-left"> </i>
+        </button>
+
+        <!-- Book -->
+        <div id="book">
+          <div id="flipbook">
+            <div class="front-cover">
+              <img src="docs/front-cover.jpg" alt="Capa do Livro" />
+            </div>
+            <div class="pages">
+              <!-- Pages will be dynamically inserted via JavaScript -->
+            </div>
+            <div class="back-cover">
+              <img src="docs/back-cover.jpg" alt="Contra-Capa" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Next Button -->
+        <button id="next-btn">
+          <i class="fas fa-chevron-right"> </i>
+        </button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

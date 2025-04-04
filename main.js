@@ -29,25 +29,30 @@ document.addEventListener('DOMContentLoaded', function () {
   function showPage(pageNumber) {
     pageNumber = Math.max(0, Math.min(pageNumber, totalPages + 1))
 
-    document.querySelectorAll('.page').forEach((page) => {
+    const allPages = document.querySelectorAll('.page')
+    allPages.forEach((page) => {
+      page.classList.remove('flip-in', 'flip-out')
       page.style.display = 'none'
     })
 
+    frontCover.classList.remove('flip-in', 'flip-out')
+    backCover.classList.remove('flip-in', 'flip-out')
+    frontCover.style.display = 'none'
+    backCover.style.display = 'none'
+
     if (pageNumber === 0) {
       frontCover.style.display = 'flex'
-      backCover.style.display = 'none'
+      frontCover.classList.add('flip-in')
     } else if (pageNumber === totalPages + 1) {
-      frontCover.style.display = 'none'
       backCover.style.display = 'flex'
+      backCover.classList.add('flip-in')
     } else {
-      frontCover.style.display = 'none'
-      backCover.style.display = 'none'
-
       const pageToShow = document.querySelector(
         `.page[data-page-number="${pageNumber}"]`
       )
       if (pageToShow) {
         pageToShow.style.display = 'flex'
+        pageToShow.classList.add('flip-in')
       }
     }
 
@@ -58,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function () {
   function updateActiveLink() {
     itemsLinks.forEach((link) => {
       link.classList.remove('active')
-
       if (
         link.getAttribute('href') === '/docs/front-cover.jpg' &&
         currentPage === 0
@@ -93,7 +97,6 @@ document.addEventListener('DOMContentLoaded', function () {
     itemsLinks.forEach((link) => {
       link.addEventListener('click', function (e) {
         e.preventDefault()
-
         if (this.getAttribute('href') === '/docs/front-cover.jpg') {
           showPage(0)
         } else if (this.getAttribute('href') === '/docs/back-cover.jpg') {

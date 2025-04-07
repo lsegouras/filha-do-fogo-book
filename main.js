@@ -17,11 +17,51 @@ document.addEventListener('DOMContentLoaded', function () {
       page.className = 'page'
       page.dataset.pageNumber = i
 
-      const img = document.createElement('img')
-      img.src = `resources/page-${i}.jpg`
-      img.alt = `Página ${i}`
+      if (i === 7) {
+        page.classList.add('summary-page')
+        page.innerHTML = `
+					<div class="summary-container">
 
-      page.appendChild(img)
+						<img src="resources/page-7.jpg" alt="Sumário" class="summary-image">
+
+						<a href="#" data-page="9" class="summary-link" style="top:11.2%; left: 0; width: 100%; height: 4%;"></a>
+
+						<a href="#" data-page="19" class="summary-link" style="top: 18.2%; left: 0; width: 100%; height: 4%;"></a>
+
+						<a href="#" data-page="24" class="summary-link" style="top: 23.5%; left: 0; width: 100%; height: 4%;"></a>
+
+						<a href="#" data-page="31" class="summary-link" style="top: 29%; left: 0; width: 100%; height: 4%;"></a>
+
+						<a href="#" data-page="36" class="summary-link" style="top: 34.3%; left: 0; width: 100%; height: 4%;"></a>
+
+						<a href="#" data-page="45" class="summary-link" style="top: 39.6%; left: 0; width: 100%; height: 4%;"></a>
+
+						<a href="#" data-page="54" class="summary-link" style="top: 45%; left: 0; width: 100%; height: 4%;"></a>
+
+						<a href="#" data-page="63" class="summary-link" style="top: 50.3%; left: 0; width: 100%; height: 4%;"></a>
+
+						<a href="#" data-page="69" class="summary-link" style="top: 55.6%; left: 0; width: 100%; height: 4%;"></a>
+
+						<a href="#" data-page="77" class="summary-link" style="top: 60.9%; left: 0; width: 100%; height: 4%;"></a>
+
+						<a href="#" data-page="87" class="summary-link" style="top: 66.3%; left: 0; width: 100%; height: 6%;"></a>
+
+						<a href="#" data-page="95" class="summary-link" style="top: 74.2%; left: 0; width: 100%; height: 4%;"></a>
+
+						<a href="#" data-page="102" class="summary-link" style="top: 79.5%; left: 0; width: 100%; height: 4%;"></a>
+
+						<a href="#" data-page="110" class="summary-link" style="top: 86.6%; left: 0; width: 100%; height: 4%;"></a>
+
+
+					</div>
+				`
+      } else {
+        const img = document.createElement('img')
+        img.src = `resources/page-${i}.jpg`
+        img.alt = `Página ${i}`
+        page.appendChild(img)
+      }
+
       pagesContainer.appendChild(page)
     }
   }
@@ -31,28 +71,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const allPages = document.querySelectorAll('.page')
     allPages.forEach((page) => {
-      page.classList.remove('flip-in', 'flip-out')
+      page.classList.remove('flip-in', 'flip-out', 'active')
       page.style.display = 'none'
     })
 
-    frontCover.classList.remove('flip-in', 'flip-out')
-    backCover.classList.remove('flip-in', 'flip-out')
+    frontCover.classList.remove('flip-in', 'flip-out', 'active')
+    backCover.classList.remove('flip-in', 'flip-out', 'active')
     frontCover.style.display = 'none'
     backCover.style.display = 'none'
 
     if (pageNumber === 0) {
       frontCover.style.display = 'flex'
-      frontCover.classList.add('flip-in')
+      frontCover.classList.add('flip-in', 'active')
     } else if (pageNumber === totalPages + 1) {
       backCover.style.display = 'flex'
-      backCover.classList.add('flip-in')
+      backCover.classList.add('flip-in', 'active')
     } else {
       const pageToShow = document.querySelector(
         `.page[data-page-number="${pageNumber}"]`
       )
       if (pageToShow) {
         pageToShow.style.display = 'flex'
-        pageToShow.classList.add('flip-in')
+        pageToShow.classList.add('flip-in', 'active')
       }
     }
 
@@ -105,6 +145,16 @@ document.addEventListener('DOMContentLoaded', function () {
           showPage(parseInt(this.dataset.page))
         }
       })
+    })
+
+    document.addEventListener('click', function (e) {
+      if (e.target.classList.contains('summary-link')) {
+        e.preventDefault()
+        const pageNum = parseInt(e.target.dataset.page)
+        if (!isNaN(pageNum)) {
+          showPage(pageNum)
+        }
+      }
     })
 
     prevBtn.addEventListener('click', prevPage)

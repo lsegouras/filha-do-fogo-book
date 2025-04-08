@@ -63,15 +63,11 @@
         <!-- Book -->
         <div id="book">
           <div id="flipbook">
-            <div class="front-cover">
-              <img src="resources/front-cover.jpg" alt="Capa do Livro" />
-            </div>
-            <div class="pages">
-              <!-- Pages will be dynamically inserted via JavaScript -->
-            </div>
-            <div class="back-cover">
-              <img src="resources/back-cover.jpg" alt="Contra-Capa" />
-            </div>
+            <div
+              class="front-cover hard"
+              style="background-image: url(resources/front-cover.jpg)"
+            ></div>
+            <!-- Pages will be dynamically inserted via JavaScript -->
           </div>
         </div>
 
@@ -81,6 +77,8 @@
         </button>
       </div>
     </div>
-    <script src="main.js"></script>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/turn.min.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>

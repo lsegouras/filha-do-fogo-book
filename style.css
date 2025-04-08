@@ -11,34 +11,10 @@ body {
   overflow: hidden;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1c897;
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #863718;
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #400a0d;
-}
-
 #search-input::-webkit-outer-spin-button,
 #search-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-html {
-  scrollbar-width: thin;
-  scrollbar-color: #863718 #f1c897;
 }
 
 #container {
@@ -54,6 +30,9 @@ html {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
+  transition: transform 0.3s ease;
+  z-index: 1000;
 }
 
 #sidebar h2 {
@@ -70,6 +49,9 @@ html {
   margin-bottom: 15px;
   flex-grow: 1;
   overflow-y: auto;
+  scrollbar-width: 20px;
+  padding-right: 15px;
+  scrollbar-color: #400a0d #f1c897;
 }
 
 #items a {
@@ -240,6 +222,20 @@ html {
 .summary-link:hover::after,
 .summary-page .summary-link::after {
   opacity: 1;
+}
+
+#menu-toggle {
+  display: none;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: #400a0d;
+  color: #eda250;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 1100;
+  cursor: pointer;
 }
 
 /* Responsiveness */

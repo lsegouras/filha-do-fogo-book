@@ -95,8 +95,8 @@ document.addEventListener('DOMContentLoaded', function () {
       gradients: !$.isTouch,
       elevation: 50,
       duration: 1000,
-      width: 400,
-      height: 560,
+      width: 600, // Aumentei para um tamanho melhor em telas maiores
+      height: 840, // Mantendo a proporção de 400:560 (5:7)
       pages: totalPages + 2,
       when: {
         turning: function (e, page) {
@@ -106,6 +106,40 @@ document.addEventListener('DOMContentLoaded', function () {
         },
       },
     })
+
+    // Adicione este código para ajustar automaticamente o tamanho
+    function adjustBookSize() {
+      const container = document.getElementById('book-container')
+      const book = document.getElementById('book')
+
+      // Tamanhos máximos baseados no viewport
+      const maxWidth = window.innerWidth * 0.7
+      const maxHeight = window.innerHeight * 0.8
+
+      // Proporção do livro (5:7)
+      const aspectRatio = 5 / 7
+
+      // Calcula o tamanho ideal
+      let width = Math.min(600, maxWidth)
+      let height = width / aspectRatio
+
+      // Verifica se a altura não ultrapassa o máximo
+      if (height > maxHeight) {
+        height = maxHeight
+        width = height * aspectRatio
+      }
+
+      // Aplica os tamanhos
+      flipbook.turn('size', width, height)
+
+      // Centraliza o livro
+      book.style.width = `${width}px`
+      book.style.height = `${height}px`
+    }
+
+    // Chama a função quando a página carrega e quando redimensiona
+    window.addEventListener('load', adjustBookSize)
+    window.addEventListener('resize', adjustBookSize)
 
     showPage(0)
 

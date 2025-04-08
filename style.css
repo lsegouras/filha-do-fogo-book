@@ -252,18 +252,27 @@ body {
   #book {
     max-width: 400px;
   }
-}
 
-@media (max-width: 768px) {
   #container {
     flex-direction: column;
   }
 
   #sidebar {
-    width: 100%;
-    height: auto;
-    max-height: 200px;
-    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100vh;
+    transform: translateX(-100%);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  #sidebar.active {
+    transform: translateX(0);
+  }
+
+  #menu-toggle {
+    display: block;
   }
 
   #sidebar h2 {

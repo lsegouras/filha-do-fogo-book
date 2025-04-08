@@ -1,3 +1,5 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,6 +15,9 @@
   <body>
     <button id="menu-toggle">
       <i class="fas fa-bars"></i>
+    </button>
+    <button id="zoom-toggle">
+      <i class="fas fa-search-plus"></i>
     </button>
     <div id="container">
       <!-- Summary -->
@@ -83,8 +88,13 @@
         </button>
       </div>
     </div>
+
+    <!-- Zoom Result Container -->
+    <div id="zoom-result-container" class="img-zoom-result"></div>
+
     <script src="scripts/jquery.js"></script>
     <script src="scripts/turn.min.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/zoom.js"></script>
   </body>
 </html>

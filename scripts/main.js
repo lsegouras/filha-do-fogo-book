@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function createPages() {
     for (let i = 1; i <= totalPages; i++) {
       const pageDiv = document.createElement('div')
+      pageDiv.className = 'img-zoom-container turn-page'
 
       if (i === 7) {
         pageDiv.className = 'summary-page'
@@ -43,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     const backCover = document.createElement('div')
-    backCover.className = 'back-cover hard'
+    backCover.className = 'back-cover hard img-zoom-container'
     backCover.style.backgroundImage = 'url(resources/back-cover.jpg)'
     flipbook.append(backCover)
   }

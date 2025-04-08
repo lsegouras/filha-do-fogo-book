@@ -1,3 +1,5 @@
+/* style.css */
+
 * {
   margin: 0;
   padding: 0;
@@ -227,8 +229,8 @@ body {
 #menu-toggle {
   display: none;
   position: fixed;
-  top: 10px;
-  left: 10px;
+  top: 20px;
+  left: 20px;
   background: #400a0d;
   color: #eda250;
   border: none;
@@ -236,6 +238,75 @@ body {
   border-radius: 50%;
   z-index: 1100;
   cursor: pointer;
+}
+
+#zoom-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #400a0d;
+  color: #eda250;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 1100;
+  cursor: pointer;
+  display: block;
+}
+
+.img-zoom-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.img-zoom-lens {
+  position: absolute;
+  border: 2px solid #400a0d;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(237, 162, 80, 0.3);
+  cursor: none;
+  pointer-events: none;
+  display: none;
+  z-index: 1000;
+}
+
+.img-zoom-result {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  border: 2px solid #400a0d;
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: white;
+}
+
+#zoom-result-container {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  border: 2px solid #400a0d;
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.zoom-active #flipbook .turn-page {
+  cursor: zoom-in;
 }
 
 /* Responsiveness */
@@ -302,6 +373,22 @@ body {
   }
 
   #next-btn {
+    right: 10px;
+  }
+
+  #zoom-toggle {
+    display: block;
+  }
+
+  #zoom-result-container {
+    width: 200px;
+    height: 300px;
+    right: 10px;
+  }
+
+  .img-zoom-result {
+    width: 200px;
+    height: 300px;
     right: 10px;
   }
 }

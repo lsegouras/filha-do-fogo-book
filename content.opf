@@ -177,7 +177,7 @@
   </spine>
 
 	<guide>
-        <reference href="index.html#toc" type="toc" title="Table of Contents" />
+        <reference href="index.html" type="toc" title="Table of Contents" />
   </guide>
 
 </package>

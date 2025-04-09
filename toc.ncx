@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN"
+  "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
 <ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
-    <!-- Metadados básicos -->
+
+		<!-- Metadados básicos -->
     <head>
-        <meta name="dtb:uid" content="urn:uuid:12345678-1234-5678-1234-567812345678"/>
+        <meta name="dtb:uid content="BookId"/>
         <meta name="dtb:depth" content="1"/>
         <meta name="dtb:totalPageCount" content="0"/>
         <meta name="dtb:maxPageNumber" content="0"/>
@@ -10,19 +13,107 @@
 
     <!-- Título do livro e autor -->
     <docTitle>
-        <text>A Festa da Lua</text>
+        <text>A Filha do Fogo</text>
     </docTitle>
     <docAuthor>
-        <text>Ana Maria Machado</text>
+        <text>Elizandra Souza</text>
     </docAuthor>
 
 		<!-- Sumário -->
     <navMap>
-        <navPoint id="navPoint-1" playOrder="1">
-            <navLabel>
-                <text>Content</text>
-            </navLabel>
-            <content src="./content/content.html"/>
-        </navPoint>
-    </navMap>
+    	<navPoint id="cover" playOrder="1">
+      	<navLabel><text>Capa</text></navLabel>
+      	<content src="resources/images/front-cover.png"/>
+    	</navPoint>
+
+    	<navPoint id="creditos" playOrder="2">
+      	<navLabel><text>Créditos</text></navLabel>
+      	<content src="content/content.html#page4"/>
+    	</navPoint>
+
+    	<navPoint id="sumario" playOrder="3">
+      	<navLabel><text>Sumário</text></navLabel>
+      	<content src="content/content.html#page7"/>
+    	</navPoint>
+
+    	<navPoint id="dinha" playOrder="4">
+      	<navLabel><text>Filha do fogo e os enredos sankofas • Dinha</text></navLabel>
+      	<content src="content/content.html#page9"/>
+    	</navPoint>
+
+    	<navPoint id="filha-do-fogo" playOrder="5">
+      	<navLabel><text>Filha do fogo</text></navLabel>
+      	<content src="content/content.html#page19"/>
+    	</navPoint>
+
+    	<navPoint id="ceu" playOrder="6">
+      	<navLabel><text>A primeira vez que fui ao céu</text></navLabel>
+      	<content src="content/content.html#page24"/>
+    	</navPoint>
+
+    	<navPoint id="cumbuca" playOrder="7">
+      	<navLabel><text>Dona da cumbuca</text></navLabel>
+      	<content src="content/content.html#page31"/>
+    	</navPoint>
+
+    	<navPoint id="tenis" playOrder="8">
+      	<navLabel><text>O tênis de Obary</text></navLabel>
+      	<content src="content/content.html#page36"/>
+    	</navPoint>
+
+			<navPoint id="afagos" playOrder="9">
+				<navLabel><text>Afagos</text></navLabel>
+				<content src="content/content.html#page45"/>
+			</navPoint>
+
+			<navPoint id="aguas" playOrder="10">
+				<navLabel><text>Antes que as águas da cabaça sequem...</text></navLabel>
+				<content src="content/content.html#page54"/>
+			</navPoint>
+
+			<navPoint id="nanga" playOrder="11">
+				<navLabel><text>N'anga: a curandeira</text></navLabel>
+				<content src="content/content.html#page63"/>
+			</navPoint>
+
+			<navPoint id="trovoada" playOrder="12">
+				<navLabel><text>Muita trovoada é sinal de pouca chuva</text></navLabel>
+				<content src="content/content.html#page69"/>
+			</navPoint>
+
+			<navPoint id="tradicao" playOrder="13">
+				<navLabel><text>Com tradição</text></navLabel>
+				<content src="content/content.html#page77"/>
+			</navPoint>
+
+			<navPoint id="lua" playOrder="14">
+				<navLabel><text>Quando a Lua não está cheia, as estrelas ficam mais brilhantes</text></navLabel>
+				<content src="content/content.html#page87"/>
+			</navPoint>
+
+			<navPoint id="disritmia" playOrder="15">
+				<navLabel><text>Disritmia</text></navLabel>
+				<content src="content/content.html#page95"/>
+			</navPoint>
+
+			<navPoint id="jandira" playOrder="16">
+				<navLabel><text>As sete calcinhas de Jandira</text></navLabel>
+				<content src="content/content.html#page102"/>
+			</navPoint>
+
+			<navPoint id="autora" playOrder="17">
+				<navLabel><text>Sobre a autora</text></navLabel>
+				<content src="content/content.html#page110"/>
+			</navPoint>
+
+			<navPoint id="educador" playOrder="18">
+				<navLabel><text>Caderno de Sugestões ao Educador(a) Mediador(a)</text></navLabel>
+				<content src="content/content.html#page113"/>
+			</navPoint>
+
+			<navPoint id="contra-capa" playOrder="19">
+				<navLabel><text>Contra-Capa</text></navLabel>
+				<content src="resources/images/back-cover.png"/>
+			</navPoint>
+  	</navMap>
 </ncx>

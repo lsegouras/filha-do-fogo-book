@@ -289,24 +289,14 @@ body {
   background-color: white;
 }
 
-#zoom-result-container {
-  position: fixed;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  border: 2px solid #400a0d;
-  width: 300px;
-  height: 400px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: none;
-  z-index: 1000;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
 .zoom-active #flipbook .turn-page {
   cursor: zoom-in;
+}
+
+#zoom-toggle.active {
+  background: #eda250;
+  color: #400a0d;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Responsiveness */
@@ -380,15 +370,12 @@ body {
     display: block;
   }
 
-  #zoom-result-container {
-    width: 200px;
-    height: 300px;
-    right: 10px;
-  }
-
   .img-zoom-result {
-    width: 200px;
-    height: 300px;
+    width: 160px;
+    height: 240px;
     right: 10px;
+    top: auto;
+    bottom: 10px;
+    transform: none;
   }
 }

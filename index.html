@@ -1,20 +1,27 @@
 <!-- index.html -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Filha do Fogo - Web Book</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="Tive a oportunidade de conhecer a Elizandra Souza, menina pretinha, como se intitulava, distribuindo suas poesias nos fanzines, lá pelos idos dos anos 2000 no Sarau da Cooperifa. Já era nítido que seria essa escritora dos contos de Filha do fogo, entre outros que já escreveu e que com certeza escreverá. Faz da sua escrita uma flor que ora nos presenteia com seu aroma, ora perfura com espinhos que afetam nossas almas convocando para a primavera. Uma das pioneiras na luta antirracista e antimachista nas quebradas, e quem é de lá de onde ela vem sabe como é difícil sonhar com as mãos. E através dos seus sonhos ela se fez existir em cada página da vida que escreve com uma caneta ancestral para acordar o mundo moderno. Este livro é a prova viva da mulher que ela se tornou, e da escritora que leva consigo outras tantas mulheres da Literatura Negra do país. Ela são muitas. Nós, que somos e pisamos na lama, saudamos você, seu livro e a história que você ajudou a asfaltar. Muito obrigado. Sérgio Vaz"
+    />
+    <meta name="author" content="Elizandra Souza" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" href="./resources/styles/style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      type="text/css"
+      href="./resources/fonts/css/all.min.css"
     />
   </head>
-  <body>
+  <body lang="pt-BR">
     <button id="menu-toggle">
-      <i class="fas fa-bars"></i>
+      <i class="fa-solid fa-bars"></i>
     </button>
     <button id="zoom-toggle">
       <i class="fas fa-search-plus"></i>
@@ -24,7 +31,7 @@
       <div id="sidebar">
         <h2>Sumário</h2>
         <div id="items">
-          <a href="/resources/front-cover.jpg">Capa</a>
+          <a href="/resources/images/front-cover.png">Capa</a>
           <a href="#" data-page="4">Créditos</a>
           <a href="#" data-page="7">Sumário</a>
           <a href="#" data-page="9"
@@ -45,10 +52,10 @@
           <a href="#" data-page="95">Disritmia</a>
           <a href="#" data-page="102">As sete calcinhas de Jandira</a>
           <a href="#" data-page="110">Sobre a autora</a>
-          <a href="#" data-page=""
+          <a href="#" data-page="113"
             >Caderno de Sugestões ao Educador(a) Mediador(a)</a
           >
-          <a href="/resources/back-cover.jpg">Contra-Capa</a>
+          <a href="/resources/images/back-cover.png">Contra-Capa</a>
         </div>
 
         <!-- Search Field -->
@@ -76,7 +83,7 @@
           <div id="flipbook">
             <div
               class="front-cover hard"
-              style="background-image: url(resources/front-cover.jpg)"
+              style="background-image: url(resources/images/front-cover.png)"
             ></div>
             <!-- Pages will be dynamically inserted via JavaScript -->
           </div>
@@ -92,9 +99,9 @@
     <!-- Zoom Result Container -->
     <div id="zoom-result-container" class="img-zoom-result"></div>
 
-    <script src="scripts/jquery.js"></script>
-    <script src="scripts/turn.min.js"></script>
-    <script src="scripts/main.js"></script>
-    <script src="scripts/zoom.js"></script>
+    <script src="/resources/scripts/jquery.js"></script>
+    <script src="/resources/scripts/turn.min.js"></script>
+    <script src="/resources/scripts/main.js"></script>
+    <script src="/resources/scripts/zoom.js"></script>
   </body>
 </html>

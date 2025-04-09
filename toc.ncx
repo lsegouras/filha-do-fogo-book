@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+    <!-- Metadados básicos -->
+    <head>
+        <meta name="dtb:uid" content="urn:uuid:12345678-1234-5678-1234-567812345678"/>
+        <meta name="dtb:depth" content="1"/>
+        <meta name="dtb:totalPageCount" content="0"/>
+        <meta name="dtb:maxPageNumber" content="0"/>
+    </head>
+
+    <!-- Título do livro e autor -->
+    <docTitle>
+        <text>A Festa da Lua</text>
+    </docTitle>
+    <docAuthor>
+        <text>Ana Maria Machado</text>
+    </docAuthor>
+
+		<!-- Sumário -->
+    <navMap>
+        <navPoint id="navPoint-1" playOrder="1">
+            <navLabel>
+                <text>Content</text>
+            </navLabel>
+            <content src="./content/content.html"/>
+        </navPoint>
+    </navMap>
+</ncx>

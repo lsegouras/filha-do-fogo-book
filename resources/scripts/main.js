@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <img src="resources/images/page-7.png" alt="Sumário" class="summary-image">
   </li>
   <li><a href="#" data-page="9" class="summary-link" aria-label="Ir para página 9" style="top:11.2%; left: 0; width: 100%; height: 4%;"></a></li>
-  <li><a href="#" data-page="19" class="summary-link aria-label="Ir para página 19" style="top: 18.2%; left: 0; width: 100%; height: 4%;"></a></li>
+  <li><a href="#" data-page="19" class="summary-link" aria-label="Ir para página 19" style="top: 18.2%; left: 0; width: 100%; height: 4%;"></a></li>
   <li><a href="#" data-page="24" class="summary-link" aria-label="Ir para página 24" style="top: 23.5%; left: 0; width: 100%; height: 4%;"></a></li>
   <li><a href="#" data-page="31" class="summary-link" aria-label="Ir para página 31" style="top: 29%; left: 0; width: 100%; height: 4%;"></a></li>
   <li><a href="#" data-page="36" class="summary-link" aria-label="Ir para página 36" style="top: 34.3%; left: 0; width: 100%; height: 4%;"></a></li>

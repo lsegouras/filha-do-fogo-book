@@ -21,15 +21,47 @@
     <link rel="stylesheet" href="./resources/styles/fontello.css" />
   </head>
   <body lang="pt-BR" xml:lang="pt-BR">
+    <!-- Schema.org Book metadata -->
+    <div itemscope itemtype="https://schema.org/Book">
+      <meta itemprop="name" content="Filha do Fogo [Livro Eletrônico]" />
+      <meta itemprop="author" content="Elizandra Souza" />
+      <meta
+        itemprop="description"
+        content="Tive a oportunidade de conhecer a Elizandra Souza [...]"
+      />
+      <meta itemprop="copyrightHolder" content="Global Editora" />
+      <meta itemprop="copyrightYear" content="2024" />
+      <meta
+        itemprop="publisher"
+        itemtype="https://schema.org/Organization"
+        itemscope
+        content="Global Editora"
+      />
+      <meta
+        itemprop="subject"
+        content="1. Literatura Negra 2. Contos 3. Resistência feminina"
+      />
+      <meta itemprop="accessibilityControl" content="fullKeyboardControl" />
+      <meta itemprop="accessibilityFeature" content="alternativeText" />
+      <meta itemprop="accessibilityFeature" content="longDescription" />
+      <meta itemprop="accessibilityFeature" content="displayTransformability" />
+      <meta itemprop="accessibilityFeature" content="resizeText/CSSEnabled" />
+      <meta itemprop="accessibilityFeature" content="highContrast/CSSEnabled" />
+      <meta itemprop="accessibilityFeature" content="largePrint/CSSEnabled" />
+    </div>
+
+    <!-- Botões de interação -->
     <button id="menu-toggle">
       <i class="icon-bars"></i>
     </button>
     <button id="zoom-toggle">
       <i class="icon-search-plus"></i>
     </button>
+
+    <!-- Código principal -->
     <div id="container">
       <!-- Summary -->
-      <div id="sidebar">
+      <nav id="sidebar" epub:type="toc" role="doc-toc">
         <h2>Sumário</h2>
         <div id="items">
           <a href="/resources/images/front-cover.png">Capa</a>
@@ -72,7 +104,7 @@
             <i class="icon-search"></i>
           </button>
         </div>
-      </div>
+      </nav>
       <div id="book-container">
         <!-- Previous Button -->
         <button id="prev-btn">

@@ -171,7 +171,7 @@
     <!-- <item id="libras1" href="resources/videos/libras1.mp4" media-type="video/mp4"/> -->
   </manifest>
 
-  <spine toc="toc">
+  <spine toc="ncx">
         <itemref idref="index"/>
         <itemref idref="content"/>
   </spine>

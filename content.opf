@@ -36,17 +36,16 @@
 
     <!-- Estilos -->
     <item id="style" href="resources/styles/style.css" media-type="text/css"/>
-    <item id="fontawesome" href="resources/fonts/css/all.min.css" media-type="text/css"/>
+    <item id="fontello" href="resources/fonts/css/fontello.css" media-type="text/css"/>
 
     <!-- Scripts -->
     <item id="script1" href="resources/scripts/main.js" media-type="application/javascript"/>
     <item id="script2" href="resources/scripts/jquery.js" media-type="application/javascript"/>
     <item id="script3" href="resources/scripts/turn.js" media-type="application/javascript"/>
-    <item id="script4" href="resources/scripts/turn.min.js" media-type="application/javascript"/>
     <item id="script5" href="resources/scripts/zoom.min.js" media-type="application/javascript"/>
 
     <!-- Imagens -->
-    <item id="cover-page" href="resources/images/front-cover.png" media-type="image/png"/>
+    <item id="front-page" href="resources/images/front-cover.png" media-type="image/png"/>
     <item id="page1" href="resources/images/page-1.png" media-type="image/png"/>
     <item id="page2" href="resources/images/page-2.png" media-type="image/png"/>
     <item id="page3" href="resources/images/page-3.png" media-type="image/png"/>
@@ -111,5 +110,54 @@
     <item id="page62" href="resources/images/page-62.png" media-type="image/png"/>
     <item id="page63" href="resources/images/page-63.png" media-type="image/png"/>
     <item id="page64" href="resources/images/page-64.png" media-type="image/png"/>
+		<item id="page65" href="resources/images/page-65.png" media-type="image/png"/>
+		<item id="page66" href="resources/images/page-66.png" media-type="image/png"/>
+		<item id="page67" href="resources/images/page-67.png" media-type="image/png"/>
+		<item id="page68" href="resources/images/page-68.png" media-type="image/png"/>
+		<item id="page69" href="resources/images/page-69.png" media-type="image/png"/>
+		<item id="page70" href="resources/images/page-70.png" media-type="image/png"/>
+		<item id="page71" href="resources/images/page-71.png" media-type="image/png"/>
+		<item id="page72" href="resources/images/page-72.png" media-type="image/png"/>
+		<item id="page73" href="resources/images/page-73.png" media-type="image/png"/>
+		<item id="page74" href="resources/images/page-74.png" media-type="image/png"/>
+		<item id="page75" href="resources/images/page-75.png" media-type="image/png"/>
+		<item id="page76" href="resources/images/page-76.png" media-type="image/png"/>
+		<item id="page77" href="resources/images/page-77.png" media-type="image/png"/>
+		<item id="page78" href="resources/images/page-78.png" media-type="image/png"/>
+		<item id="page79" href="resources/images/page-79.png" media-type="image/png"/>
+		<item id="page80" href="resources/images/page-80.png" media-type="image/png"/>
+		<item id="page81" href="resources/images/page-81.png" media-type="image/png"/>
+		<item id="page82" href="resources/images/page-82.png" media-type="image/png"/>
+		<item id="page83" href="resources/images/page-83.png" media-type="image/png"/>
+		<item id="page84" href="resources/images/page-84.png" media-type="image/png"/>
+		<item id="page85" href="resources/images/page-85.png" media-type="image/png"/>
+		<item id="page86" href="resources/images/page-86.png" media-type="image/png"/>
+		<item id="page87" href="resources/images/page-87.png" media-type="image/png"/>
+		<item id="page88" href="resources/images/page-88.png" media-type="image/png"/>
+		<item id="page89" href="resources/images/page-89.png" media-type="image/png"/>
+		<item id="page90" href="resources/images/page-90.png" media-type="image/png"/>
+		<item id="page91" href="resources/images/page-91.png" media-type="image/png"/>
+		<item id="page92" href="resources/images/page-92.png" media-type="image/png"/>
+		<item id="page93" href="resources/images/page-93.png" media-type="image/png"/>
+		<item id="page94" href="resources/images/page-94.png" media-type="image/png"/>
+		<item id="page95" href="resources/images/page-95.png" media-type="image/png"/>
+		<item id="page96" href="resources/images/page-96.png" media-type="image/png"/>
+		<item id="page97" href="resources/images/page-97.png" media-type="image/png"/>
+		<item id="page98" href="resources/images/page-98.png" media-type="image/png"/>
+		<item id="page99" href="resources/images/page-99.png" media-type="image/png"/>
+		<item id="page100" href="resources/images/page-100.png" media-type="image/png"/>
+		<item id="page101" href="resources/images/page-101.png" media-type="image/png"/>
+		<item id="page102" href="resources/images/page-102.png" media-type="image/png"/>
+		<item id="page103" href="resources/images/page-103.png" media-type="image/png"/>
+		<item id="page104" href="resources/images/page-104.png" media-type="image/png"/>
+		<item id="page105" href="resources/images/page-105.png" media-type="image/png"/>
+		<item id="page106" href="resources/images/page-106.png" media-type="image/png"/>
+		<item id="page107" href="resources/images/page-107.png" media-type="image/png"/>
+		<item id="page108" href="resources/images/page-108.png" media-type="image/png"/>
+		<item id="page109" href="resources/images/page-109.png" media-type="image/png"/>
+		<item id="page110" href="resources/images/page-110.png" media-type="image/png"/>
+		<item id="page111" href="resources/images/page-111.png" media-type="image/png"/>
+		<item id="page112" href="resources/images/page-112.png" media-type="image/png"/>
+		<item id="back-page" href="resources/images/back-cover.png" media-type="image/png"/>
   </manifest>
 </package>

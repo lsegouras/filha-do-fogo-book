@@ -1,48 +1,52 @@
-<!-- content.opf -->
-
 <?xml version="1.0" encoding="UTF-8"?>
 <package version="2.0" xmlns="http://www.idpf.org/2007/opf" uniqueidentifier="BookId">
-    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
-    	<dc:title>Filha do Fogo</dc:title>
-			<dc:language>pt-BR</dc:language>
-    	<dc:creator opf:role="aut" opf:file-as="Elizandra Souza">
-        Elizandra Souza
-        </dc:creator>
-    	<dc:publisher>Gaudi Editorial</dc:publisher>
-			<dc:date>2025</dc:date>
-    	<dc:description>Tive a oportunidade de conhecer a Elizandra Souza, menina pretinha, como se intitulava, distribuindo suas poesias nos fanzines, lá pelos idos dos anos 2000 no Sarau da Cooperifa. Já era nítido que seria essa escritora dos contos de Filha do fogo, entre outros que já escreveu e que com certeza escreverá. Faz da sua escrita uma flor que ora nos presenteia com seu aroma, ora perfura com espinhos que afetam nossas almas convocando para a primavera. Uma das pioneiras na luta antirracista e antimachista nas quebradas, e quem é de lá de onde ela vem sabe como é difícil sonhar com as mãos. E através dos seus sonhos ela se fez existir em cada página da vida que escreve com uma caneta ancestral para acordar o mundo moderno. Este livro é a prova viva da mulher que ela se tornou, e da escritora que leva consigo outras tantas mulheres da Literatura Negra do país. Ela são muitas. Nós, que somos e pisamos na lama, saudamos você, seu livro e a história que você ajudou a asfaltar. Muito obrigado. Sérgio Vaz</dc:description>
-    <meta name="cover" content="cover.jpg" />
-        <x-metadata>
-            <EmbeddedCover>cover.jpg</EmbeddedCover>
-        </x-metadata>
-				<meta property="schema:accessibilityFeature">structuralNavigation</meta>
-        <meta property="schema:accessibilityFeature">tableOfContents</meta>
-        <meta property="schema:accessibilityAPI">ARIA</meta>
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:title>Filha do Fogo</dc:title>
+    <dc:language>pt-BR</dc:language>
+    <dc:creator opf:role="aut" opf:file-as="Elizandra Souza">Elizandra Souza</dc:creator>
+    <dc:publisher>Gaudi Editorial</dc:publisher>
+    <dc:date>2025</dc:date>
+    <dc:description>
+      Tive a oportunidade de conhecer a Elizandra Souza, menina pretinha, como se intitulava,
+      distribuindo suas poesias nos fanzines, lá pelos idos dos anos 2000 no Sarau da Cooperifa.
+      Já era nítido que seria essa escritora dos contos de Filha do fogo, entre outros que já
+      escreveu e que com certeza escreverá. Faz da sua escrita uma flor que ora nos presenteia
+      com seu aroma, ora perfura com espinhos que afetam nossas almas convocando para a primavera.
+      Uma das pioneiras na luta antirracista e antimachista nas quebradas, e quem é de lá de onde
+      ela vem sabe como é difícil sonhar com as mãos. E através dos seus sonhos ela se fez existir
+      em cada página da vida que escreve com uma caneta ancestral para acordar o mundo moderno.
+      Este livro é a prova viva da mulher que ela se tornou, e da escritora que leva consigo outras
+      tantas mulheres da Literatura Negra do país. Ela são muitas. Nós, que somos e pisamos na lama,
+      saudamos você, seu livro e a história que você ajudou a asfaltar. Muito obrigado. Sérgio Vaz
+    </dc:description>
+    <meta name="cover" content="cover.jpg"/>
+    <meta property="schema:accessibilityFeature">structuralNavigation</meta>
+    <meta property="schema:accessibilityFeature">tableOfContents</meta>
+    <meta property="schema:accessibilityAPI">ARIA</meta>
+    <x-metadata>
+      <EmbeddedCover>cover.jpg</EmbeddedCover>
+    </x-metadata>
   </metadata>
 
   <manifest>
-		<item id="toc" properties="nav" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
-
-		<item id="index" href="index.html" media-type="application/xhtml+xml"/>
-
+    <item id="toc" properties="nav" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+    <item id="index" href="index.html" media-type="application/xhtml+xml"/>
     <item id="cover-image" href="cover.jpg" media-type="image/jpeg"/>
+    <item id="content" href="content/content.html" media-type="application/xhtml+xml"/>
 
-		<item id="content" href="content/content.html" media-type="application/xhtml+xml"/>
-
-		<!-- Estilos -->
-		<item id="style" href="resources/styles/style.css" media-type="text/css"/>
-		<item id="fontawesome" href="resources/fonts/css/all.min.css" media-type="text/css"/>
-
+    <!-- Estilos -->
+    <item id="style" href="resources/styles/style.css" media-type="text/css"/>
+    <item id="fontawesome" href="resources/fonts/css/all.min.css" media-type="text/css"/>
 
     <!-- Scripts -->
     <item id="script1" href="resources/scripts/main.js" media-type="application/javascript"/>
-		<item id="script2" href="resources/scripts/jquery.js" media-type="application/javascript"/>
-		<item id="script3" href="resources/scripts/turn.js" media-type="application/javascript"/>
-		<item id="script4" href="resources/scripts/turn.min.js" media-type="application/javascript"/>
-		<item id="script5" href="resources/scripts/zoom.min.js" media-type="application/javascript"/>
+    <item id="script2" href="resources/scripts/jquery.js" media-type="application/javascript"/>
+    <item id="script3" href="resources/scripts/turn.js" media-type="application/javascript"/>
+    <item id="script4" href="resources/scripts/turn.min.js" media-type="application/javascript"/>
+    <item id="script5" href="resources/scripts/zoom.min.js" media-type="application/javascript"/>
 
     <!-- Imagens -->
-		<item id="cover-page" href="resources/images/front-cover.png" media-type="image/png"/>
+    <item id="cover-page" href="resources/images/front-cover.png" media-type="image/png"/>
     <item id="page1" href="resources/images/page-1.png" media-type="image/png"/>
     <item id="page2" href="resources/images/page-2.png" media-type="image/png"/>
     <item id="page3" href="resources/images/page-3.png" media-type="image/png"/>
@@ -75,109 +79,37 @@
     <item id="page30" href="resources/images/page-30.png" media-type="image/png"/>
     <item id="page31" href="resources/images/page-31.png" media-type="image/png"/>
     <item id="page32" href="resources/images/page-32.png" media-type="image/png"/>
-		<item id="page33" href="resources/images/page-33.png" media-type="image/png"/>
-		<item id="page34" href="resources/images/page-34.png" media-type="image/png"/>
-		<item id="page35" href="resources/images/page-35.png" media-type="image/png"/>
-		<item id="page36" href="resources/images/page-36.png" media-type="image/png"/>
-		<item id="page37" href="resources/images/page-37.png" media-type="image/png"/>
-		<item id="page38" href="resources/images/page-38.png" media-type="image/png"/>
-		<item id="page39" href="resources/images/page-39.png" media-type="image/png"/>
-		<item id="page40" href="resources/images/page-40.png" media-type="image/png"/>
-		<item id="page41" href="resources/images/page-41.png" media-type="image/png"/>
-		<item id="page42" href="resources/images/page-42.png" media-type="image/png"/>
-		<item id="page43" href="resources/images/page-43.png" media-type="image/png"/>
-		<item id="page44" href="resources/images/page-44.png" media-type="image/png"/>
-		<item id="page45" href="resources/images/page-45.png" media-type="image/png"/>
-		<item id="page46" href="resources/images/page-46.png" media-type="image/png"/>
-		<item id="page47" href="resources/images/page-47.png" media-type="image/png"/>
-		<item id="page48" href="resources/images/page-48.png" media-type="image/png"/>
-		<item id="page49" href="resources/images/page-49.png" media-type="image/png"/>
-		<item id="page50" href="resources/images/page-50.png" media-type="image/png"/>
-		<item id="page51" href="resources/images/page-51.png" media-type="image/png"/>
-		<item id="page52" href="resources/images/page-52.png" media-type="image/png"/>
-		<item id="page53" href="resources/images/page-53.png" media-type="image/png"/>
-		<item id="page54" href="resources/images/page-54.png" media-type="image/png"/>
-		<item id="page55" href="resources/images/page-55.png" media-type="image/png"/>
-		<item id="page56" href="resources/images/page-56.png" media-type="image/png"/>
-		<item id="page57" href="resources/images/page-57.png" media-type="image/png"/>
-		<item id="page58" href="resources/images/page-58.png" media-type="image/png"/>
-		<item id="page59" href="resources/images/page-59.png" media-type="image/png"/>
-		<item id="page60" href="resources/images/page-60.png" media-type="image/png"/>
-		<item id="page61" href="resources/images/page-61.png" media-type="image/png"/>
-		<item id="page62" href="resources/images/page-62.png" media-type="image/png"/>
-		<item id="page63" href="resources/images/page-63.png" media-type="image/png"/>
-		<item id="page64" href="resources/images/page-64.png" media-type="image/png"/>
-		<item id="page65" href="resources/images/page-65.png" media-type="image/png"/>
-		<item id="page66" href="resources/images/page-66.png" media-type="image/png"/>
-		<item id="page67" href="resources/images/page-67.png" media-type="image/png"/>
-		<item id="page68" href="resources/images/page-68.png" media-type="image/png"/>
-		<item id="page69" href="resources/images/page-69.png" media-type="image/png"/>
-		<item id="page70" href="resources/images/page-70.png" media-type="image/png"/>
-		<item id="page71" href="resources/images/page-71.png" media-type="image/png"/>
-		<item id="page72" href="resources/images/page-72.png" media-type="image/png"/>
-		<item id="page73" href="resources/images/page-73.png" media-type="image/png"/>
-		<item id="page74" href="resources/images/page-74.png" media-type="image/png"/>
-		<item id="page75" href="resources/images/page-75.png" media-type="image/png"/>
-		<item id="page76" href="resources/images/page-76.png" media-type="image/png"/>
-		<item id="page77" href="resources/images/page-77.png" media-type="image/png"/>
-		<item id="page78" href="resources/images/page-78.png" media-type="image/png"/>
-		<item id="page79" href="resources/images/page-79.png" media-type="image/png"/>
-		<item id="page80" href="resources/images/page-80.png" media-type="image/png"/>
-		<item id="page81" href="resources/images/page-81.png" media-type="image/png"/>
-		<item id="page82" href="resources/images/page-82.png" media-type="image/png"/>
-		<item id="page83" href="resources/images/page-83.png" media-type="image/png"/>
-		<item id="page84" href="resources/images/page-84.png" media-type="image/png"/>
-		<item id="page85" href="resources/images/page-85.png" media-type="image/png"/>
-		<item id="page86" href="resources/images/page-86.png" media-type="image/png"/>
-		<item id="page87" href="resources/images/page-87.png" media-type="image/png"/>
-		<item id="page88" href="resources/images/page-88.png" media-type="image/png"/>
-		<item id="page89" href="resources/images/page-89.png" media-type="image/png"/>
-		<item id="page90" href="resources/images/page-90.png" media-type="image/png"/>
-		<item id="page91" href="resources/images/page-91.png" media-type="image/png"/>
-		<item id="page92" href="resources/images/page-92.png" media-type="image/png"/>
-		<item id="page93" href="resources/images/page-93.png" media-type="image/png"/>
-		<item id="page94" href="resources/images/page-94.png" media-type="image/png"/>
-		<item id="page95" href="resources/images/page-95.png" media-type="image/png"/>
-		<item id="page96" href="resources/images/page-96.png" media-type="image/png"/>
-		<item id="page97" href="resources/images/page-97.png" media-type="image/png"/>
-		<item id="page98" href="resources/images/page-98.png" media-type="image/png"/>
-		<item id="page99" href="resources/images/page-99.png" media-type="image/png"/>
-		<item id="page100" href="resources/images/page-100.png" media-type="image/png"/>
-		<item id="page101" href="resources/images/page-101.png" media-type="image/png"/>
-		<item id="page102" href="resources/images/page-102.png" media-type="image/png"/>
-		<item id="page103" href="resources/images/page-103.png" media-type="image/png"/>
-		<item id="page104" href="resources/images/page-104.png" media-type="image/png"/>
-		<item id="page105" href="resources/images/page-105.png" media-type="image/png"/>
-		<item id="page106" href="resources/images/page-106.png" media-type="image/png"/>
-		<item id="page107" href="resources/images/page-107.png" media-type="image/png"/>
-		<item id="page108" href="resources/images/page-108.png" media-type="image/png"/>
-		<item id="page109" href="resources/images/page-109.png" media-type="image/png"/>
-		<item id="page110" href="resources/images/page-110.png" media-type="image/png"/>
-		<item id="page111" href="resources/images/page-111.png" media-type="image/png"/>
-		<item id="page112" href="resources/images/page-112.png" media-type="image/png"/>
-		<item id="back-page" href="resources/images/back-cover.png" media-type="image/png"/>
-
-		<!-- Fonts -->
-		<item id="font1" href="resources/fonts/webfonts/fa-brands-400.woff2" media-type="font/woff2"/>
-		<item id="font2" href="resources/fonts/webfonts/fa-regular-400.woff2" media-type="font/woff2"/>
-		<item id="font3" href="resources/fonts/webfonts/fa-solid-900.woff2" media-type="font/woff2"/>
-		<item id="font4" href="resources/fonts/webfonts/fa-v4compatibility.woff2" media-type="font/woff2"/>
-
-    <!-- Áudios -->
-    <!-- <item id="audio1" href="resources/audios/audio1.mp3" media-type="audio/mpeg"/> -->
-    <!-- Adicione todos os áudios... -->
-
-    <!-- Vídeos -->
-    <!-- <item id="libras1" href="resources/videos/libras1.mp4" media-type="video/mp4"/> -->
+    <item id="page33" href="resources/images/page-33.png" media-type="image/png"/>
+    <item id="page34" href="resources/images/page-34.png" media-type="image/png"/>
+    <item id="page35" href="resources/images/page-35.png" media-type="image/png"/>
+    <item id="page36" href="resources/images/page-36.png" media-type="image/png"/>
+    <item id="page37" href="resources/images/page-37.png" media-type="image/png"/>
+    <item id="page38" href="resources/images/page-38.png" media-type="image/png"/>
+    <item id="page39" href="resources/images/page-39.png" media-type="image/png"/>
+    <item id="page40" href="resources/images/page-40.png" media-type="image/png"/>
+    <item id="page41" href="resources/images/page-41.png" media-type="image/png"/>
+    <item id="page42" href="resources/images/page-42.png" media-type="image/png"/>
+    <item id="page43" href="resources/images/page-43.png" media-type="image/png"/>
+    <item id="page44" href="resources/images/page-44.png" media-type="image/png"/>
+    <item id="page45" href="resources/images/page-45.png" media-type="image/png"/>
+    <item id="page46" href="resources/images/page-46.png" media-type="image/png"/>
+    <item id="page47" href="resources/images/page-47.png" media-type="image/png"/>
+    <item id="page48" href="resources/images/page-48.png" media-type="image/png"/>
+    <item id="page49" href="resources/images/page-49.png" media-type="image/png"/>
+    <item id="page50" href="resources/images/page-50.png" media-type="image/png"/>
+    <item id="page51" href="resources/images/page-51.png" media-type="image/png"/>
+    <item id="page52" href="resources/images/page-52.png" media-type="image/png"/>
+    <item id="page53" href="resources/images/page-53.png" media-type="image/png"/>
+    <item id="page54" href="resources/images/page-54.png" media-type="image/png"/>
+    <item id="page55" href="resources/images/page-55.png" media-type="image/png"/>
+    <item id="page56" href="resources/images/page-56.png" media-type="image/png"/>
+    <item id="page57" href="resources/images/page-57.png" media-type="image/png"/>
+    <item id="page58" href="resources/images/page-58.png" media-type="image/png"/>
+    <item id="page59" href="resources/images/page-59.png" media-type="image/png"/>
+    <item id="page60" href="resources/images/page-60.png" media-type="image/png"/>
+    <item id="page61" href="resources/images/page-61.png" media-type="image/png"/>
+    <item id="page62" href="resources/images/page-62.png" media-type="image/png"/>
+    <item id="page63" href="resources/images/page-63.png" media-type="image/png"/>
+    <item id="page64" href="resources/images/page-64.png" media-type="image/png"/>
   </manifest>
-
-  <spine toc="ncx">
-        <itemref idref="index"/>
-        <itemref idref="content"/>
-  </spine>
-
-	<guide>
-        <reference href="index.html" type="toc" title="Table of Contents" />
-  </guide>
-
 </package>

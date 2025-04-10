@@ -51,19 +51,19 @@
     </div>
 
     <!-- Botões de interação -->
-    <button id="menu-toggle">
+    <button id="menu-toggle" aria-label="Abrir Menu">
       <i class="icon-bars"></i>
     </button>
-    <button id="zoom-toggle">
+    <button id="zoom-toggle" aria-label="Aumentar Zoom">
       <i class="icon-search-plus"></i>
     </button>
 
     <!-- Código principal -->
-    <div id="container">
+    <main id="container">
       <!-- Summary -->
-      <nav id="sidebar" epub:type="toc" role="doc-toc">
+      <nav id="sidebar" epub:type="toc" role="doc-toc" aria-label="Sumário">
         <h2>Sumário</h2>
-        <div id="items">
+        <section id="items" aria-label="Itens do Sumário">
           <a href="/resources/images/front-cover.png">Capa</a>
           <a href="#" data-page="4">Créditos</a>
           <a href="#" data-page="7">Sumário</a>
@@ -89,7 +89,7 @@
             >Caderno de Sugestões ao Educador(a) Mediador(a)</a
           >
           <a href="/resources/images/back-cover.png">Contra-Capa</a>
-        </div>
+        </section>
 
         <!-- Search Field -->
         <div id="search-container">
@@ -100,34 +100,34 @@
             min="1"
             max="112"
           />
-          <button id="search-btn">
+          <button id="search-btn" aria-label="Pesquisar página">
             <i class="icon-search"></i>
           </button>
         </div>
       </nav>
-      <div id="book-container">
+      <section id="book-container">
         <!-- Previous Button -->
-        <button id="prev-btn">
+        <button id="prev-btn" aria-label="Página anterior">
           <i class="icon-chevron-left"> </i>
         </button>
 
         <!-- Book -->
-        <div id="book">
-          <div id="flipbook">
+        <section id="book" aria-label="Livro">
+          <section id="flipbook" aria-label="Páginas do livro">
             <div
               class="front-cover hard"
               style="background-image: url(resources/images/front-cover.png)"
             ></div>
             <!-- Pages will be dynamically inserted via JavaScript -->
-          </div>
-        </div>
+          </section>
+        </section>
 
         <!-- Next Button -->
         <button id="next-btn">
-          <i class="icon-chevron-right"> </i>
+          <i class="icon-chevron-right" aria-label="Próxima página"> </i>
         </button>
-      </div>
-    </div>
+      </section>
+    </main>
 
     <script src="/resources/scripts/jquery.js"></script>
     <script src="/resources/scripts/turn.js"></script>

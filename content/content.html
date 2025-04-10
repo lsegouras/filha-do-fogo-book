@@ -21,17 +21,49 @@
     <link rel="stylesheet" href="./resources/styles/fontello.css" />
   </head>
   <body lang="pt-BR" xml:lang="pt-BR">
-    <button id="menu-toggle">
+    <!-- Schema.org Book metadata -->
+    <div itemscope itemtype="https://schema.org/Book">
+      <meta itemprop="name" content="Filha do Fogo [Livro Eletrônico]" />
+      <meta itemprop="author" content="Elizandra Souza" />
+      <meta
+        itemprop="description"
+        content="Tive a oportunidade de conhecer a Elizandra Souza [...]"
+      />
+      <meta itemprop="copyrightHolder" content="Global Editora" />
+      <meta itemprop="copyrightYear" content="2024" />
+      <meta
+        itemprop="publisher"
+        itemtype="https://schema.org/Organization"
+        itemscope
+        content="Global Editora"
+      />
+      <meta
+        itemprop="subject"
+        content="1. Literatura Negra 2. Contos 3. Resistência feminina"
+      />
+      <meta itemprop="accessibilityControl" content="fullKeyboardControl" />
+      <meta itemprop="accessibilityFeature" content="alternativeText" />
+      <meta itemprop="accessibilityFeature" content="longDescription" />
+      <meta itemprop="accessibilityFeature" content="displayTransformability" />
+      <meta itemprop="accessibilityFeature" content="resizeText/CSSEnabled" />
+      <meta itemprop="accessibilityFeature" content="highContrast/CSSEnabled" />
+      <meta itemprop="accessibilityFeature" content="largePrint/CSSEnabled" />
+    </div>
+
+    <!-- Botões de interação -->
+    <button id="menu-toggle" aria-label="Abrir Menu">
       <i class="icon-bars"></i>
     </button>
-    <button id="zoom-toggle">
+    <button id="zoom-toggle" aria-label="Aumentar Zoom">
       <i class="icon-search-plus"></i>
     </button>
-    <div id="container">
+
+    <!-- Código principal -->
+    <main id="container">
       <!-- Summary -->
-      <div id="sidebar">
+      <nav id="sidebar" epub:type="toc" role="doc-toc" aria-label="Sumário">
         <h2>Sumário</h2>
-        <div id="items">
+        <section id="items" aria-label="Itens do Sumário">
           <a href="/resources/images/front-cover.png">Capa</a>
           <a href="#" data-page="4">Créditos</a>
           <a href="#" data-page="7">Sumário</a>
@@ -57,7 +89,7 @@
             >Caderno de Sugestões ao Educador(a) Mediador(a)</a
           >
           <a href="/resources/images/back-cover.png">Contra-Capa</a>
-        </div>
+        </section>
 
         <!-- Search Field -->
         <div id="search-container">
@@ -68,34 +100,34 @@
             min="1"
             max="112"
           />
-          <button id="search-btn">
+          <button id="search-btn" aria-label="Pesquisar página">
             <i class="icon-search"></i>
           </button>
         </div>
-      </div>
-      <div id="book-container">
+      </nav>
+      <section id="book-container">
         <!-- Previous Button -->
-        <button id="prev-btn">
+        <button id="prev-btn" aria-label="Página anterior">
           <i class="icon-chevron-left"> </i>
         </button>
 
         <!-- Book -->
-        <div id="book">
-          <div id="flipbook">
+        <section id="book" aria-label="Livro">
+          <section id="flipbook" aria-label="Páginas do livro">
             <div
               class="front-cover hard"
               style="background-image: url(resources/images/front-cover.png)"
             ></div>
             <!-- Pages will be dynamically inserted via JavaScript -->
-          </div>
-        </div>
+          </section>
+        </section>
 
         <!-- Next Button -->
         <button id="next-btn">
-          <i class="icon-chevron-right"> </i>
+          <i class="icon-chevron-right" aria-label="Próxima página"> </i>
         </button>
-      </div>
-    </div>
+      </section>
+    </main>
 
     <script src="../resources/scripts/jquery.js"></script>
     <script src="../resources/scripts/turn.js"></script>

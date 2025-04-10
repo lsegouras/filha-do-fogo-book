@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let zoomEnabled = false
   const zoomResult = document.createElement('div')
   zoomResult.classList.add('img-zoom-result')
+  zoomResult.setAttribute('aria-hidden', 'true')
   document.body.appendChild(zoomResult)
 
   function setZoomListeners(enabled) {

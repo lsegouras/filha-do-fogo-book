@@ -14,27 +14,31 @@ document.addEventListener('DOMContentLoaded', function () {
     for (let i = 1; i <= totalPages; i++) {
       const pageDiv = document.createElement('div')
       pageDiv.className = 'img-zoom-container turn-page'
+      pageDiv.setAttribute('aria-hidden', 'true')
 
       if (i === 7) {
         pageDiv.className = 'summary-page'
+        pageDiv.setAttribute('aria-hidden', 'true')
         pageDiv.innerHTML = `
-          <div class="summary-container">
-            <img src="resources/images/page-7.png" alt="Sumário" class="summary-image">
-            <a href="#" data-page="9" class="summary-link" style="top:11.2%; left: 0; width: 100%; height: 4%;"></a>
-            <a href="#" data-page="19" class="summary-link" style="top: 18.2%; left: 0; width: 100%; height: 4%;"></a>
-            <a href="#" data-page="24" class="summary-link" style="top: 23.5%; left: 0; width: 100%; height: 4%;"></a>
-            <a href="#" data-page="31" class="summary-link" style="top: 29%; left: 0; width: 100%; height: 4%;"></a>
-            <a href="#" data-page="36" class="summary-link" style="top: 34.3%; left: 0; width: 100%; height: 4%;"></a>
-            <a href="#" data-page="45" class="summary-link" style="top: 39.6%; left: 0; width: 100%; height: 4%;"></a>
-            <a href="#" data-page="54" class="summary-link" style="top: 45%; left: 0; width: 100%; height: 4%;"></a>
-            <a href="#" data-page="63" class="summary-link" style="top: 50.3%; left: 0; width: 100%; height: 4%;"></a>
-            <a href="#" data-page="69" class="summary-link" style="top: 55.6%; left: 0; width: 100%; height: 4%;"></a>
-            <a href="#" data-page="77" class="summary-link" style="top: 60.9%; left: 0; width: 100%; height: 4%;"></a>
-            <a href="#" data-page="87" class="summary-link" style="top: 66.3%; left: 0; width: 100%; height: 6%;"></a>
-            <a href="#" data-page="95" class="summary-link" style="top: 74.2%; left: 0; width: 100%; height: 4%;"></a>
-            <a href="#" data-page="102" class="summary-link" style="top: 79.5%; left: 0; width: 100%; height: 4%;"></a>
-            <a href="#" data-page="110" class="summary-link" style="top: 86.6%; left: 0; width: 100%; height: 4%;"></a>
-          </div>
+          <ul class="summary-container">
+  <li>
+    <img src="resources/images/page-7.png" alt="Sumário" class="summary-image">
+  </li>
+  <li><a href="#" data-page="9" class="summary-link" style="top:11.2%; left: 0; width: 100%; height: 4%;"></a></li>
+  <li><a href="#" data-page="19" class="summary-link" style="top: 18.2%; left: 0; width: 100%; height: 4%;"></a></li>
+  <li><a href="#" data-page="24" class="summary-link" style="top: 23.5%; left: 0; width: 100%; height: 4%;"></a></li>
+  <li><a href="#" data-page="31" class="summary-link" style="top: 29%; left: 0; width: 100%; height: 4%;"></a></li>
+  <li><a href="#" data-page="36" class="summary-link" style="top: 34.3%; left: 0; width: 100%; height: 4%;"></a></li>
+  <li><a href="#" data-page="45" class="summary-link" style="top: 39.6%; left: 0; width: 100%; height: 4%;"></a></li>
+  <li><a href="#" data-page="54" class="summary-link" style="top: 45%; left: 0; width: 100%; height: 4%;"></a></li>
+  <li><a href="#" data-page="63" class="summary-link" style="top: 50.3%; left: 0; width: 100%; height: 4%;"></a></li>
+  <li><a href="#" data-page="69" class="summary-link" style="top: 55.6%; left: 0; width: 100%; height: 4%;"></a></li>
+  <li><a href="#" data-page="77" class="summary-link" style="top: 60.9%; left: 0; width: 100%; height: 4%;"></a></li>
+  <li><a href="#" data-page="87" class="summary-link" style="top: 66.3%; left: 0; width: 100%; height: 6%;"></a></li>
+  <li><a href="#" data-page="95" class="summary-link" style="top: 74.2%; left: 0; width: 100%; height: 4%;"></a></li>
+  <li><a href="#" data-page="102" class="summary-link" style="top: 79.5%; left: 0; width: 100%; height: 4%;"></a></li>
+  <li><a href="#" data-page="110" class="summary-link" style="top: 86.6%; left: 0; width: 100%; height: 4%;"></a></li>
+</ul>
         `
       } else {
         pageDiv.style.backgroundImage = `url(resources/images/page-${i}.png)`
@@ -46,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const backCover = document.createElement('div')
     backCover.className = 'back-cover hard img-zoom-container'
     backCover.style.backgroundImage = 'url(resources/images/back-cover.png)'
+    backCover.setAttribute('aria-hidden', 'true')
     flipbook.append(backCover)
   }
 

@@ -1,12 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<package version="2.0" xmlns="http://www.idpf.org/2007/opf" uniqueidentifier="BookId">
-  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<package version="3.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid" prefix="ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+  <metadata dc="http://purl.org/dc/elements/1.1/">
+		<meta name="generator" content="Adobe InDesign 18.0"/>
+		<meta name="cover" content="cover.jpg"/>
+		<x-metadata>
+      <EmbeddedCover>cover.jpg</EmbeddedCover>
+    </x-metadata>
+		<meta property="dcterms:modified">2025-04-10T14:36:55Z</meta>
+		<meta property="schema:accessibilityFeature">structuralNavigation</meta>
+    <meta property="schema:accessibilityFeature">tableOfContents</meta>
+    <meta property="schema:accessibilityAPI">ARIA</meta>
     <dc:title>Filha do Fogo</dc:title>
-    <dc:language>pt-BR</dc:language>
-    <dc:creator opf:role="aut" opf:file-as="Elizandra Souza">Elizandra Souza</dc:creator>
-    <dc:publisher>Gaudi Editorial</dc:publisher>
-    <dc:date>2025</dc:date>
-    <dc:description>
+    <dc:creator>Elizandra Souza</dc:creator>
+		<subject>Completar Depois...</subject>
+		<dc:description>
       Tive a oportunidade de conhecer a Elizandra Souza, menina pretinha, como se intitulava,
       distribuindo suas poesias nos fanzines, lá pelos idos dos anos 2000 no Sarau da Cooperifa.
       Já era nítido que seria essa escritora dos contos de Filha do fogo, entre outros que já
@@ -19,24 +27,25 @@
       tantas mulheres da Literatura Negra do país. Ela são muitas. Nós, que somos e pisamos na lama,
       saudamos você, seu livro e a história que você ajudou a asfaltar. Muito obrigado. Sérgio Vaz
     </dc:description>
-    <meta name="cover" content="cover.jpg"/>
-    <meta property="schema:accessibilityFeature">structuralNavigation</meta>
-    <meta property="schema:accessibilityFeature">tableOfContents</meta>
-    <meta property="schema:accessibilityAPI">ARIA</meta>
-    <x-metadata>
-      <EmbeddedCover>cover.jpg</EmbeddedCover>
-    </x-metadata>
+    <dc:publisher>Gaudi Editorial</dc:publisher>
+		<rights>Gaudi Editorial</rights>
+    <dc:date>2025</dc:date>
+		<identifier id="bookid">urn:uuid:FL123456</identifier>
+    <dc:language>pt-BR</dc:language>
   </metadata>
 
   <manifest>
-    <item id="toc" properties="nav" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
-    <item id="index" href="index.html" media-type="application/xhtml+xml"/>
+    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+    <item id="index" href="index.html" media-type="application/xhtml+xml" properties="scripted"/>
     <item id="cover-image" href="cover.jpg" media-type="image/jpeg"/>
-    <item id="content" href="content/content.html" media-type="application/xhtml+xml"/>
+    <item id="content" href="content/content.html" media-type="text/html"/>
 
     <!-- Estilos -->
     <item id="style" href="resources/styles/style.css" media-type="text/css"/>
-    <item id="fontello" href="resources/fonts/css/fontello.css" media-type="text/css"/>
+    <item id="fontello" href="resources/styles/fontello.css" media-type="text/css"/>
+
+		<!-- Fonts -->
+    <item id="fonts" href="resources/fonts/fontello.woff2" media-type="font/woff2"/>
 
     <!-- Scripts -->
     <item id="script1" href="resources/scripts/main.js" media-type="application/javascript"/>
@@ -160,4 +169,16 @@
 		<item id="page112" href="resources/images/page-112.png" media-type="image/png"/>
 		<item id="back-page" href="resources/images/back-cover.png" media-type="image/png"/>
   </manifest>
+
+	<spine toc="ncx">
+  	<itemref idref="cover"/>
+  	<itemref idref="content"/>
+  	<itemref idref="back-cover"/>
+	</spine>
+
+  <guide>
+    <reference type="cover" title="Capa" href="resources/images/front-cover.png"/>
+    <reference type="text" title="Início" href="content/content.html"/>
+		<reference type="toc" title="Sumário" href="content/content.html#page7"/>
+  </guide>
 </package>

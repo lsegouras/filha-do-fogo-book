@@ -93,12 +93,16 @@
 
         <!-- Search Field -->
         <div id="search-container">
+          <label for="search-input" class="visually-hidden"
+            >Número da página</label
+          >
           <input
             type="number"
             id="search-input"
             placeholder="Ir para página...1 a 112"
             min="1"
             max="112"
+            aria-label="Digite o número da página para ir direto a ela"
           />
           <button id="search-btn" aria-label="Pesquisar página">
             <i class="icon-search"></i>

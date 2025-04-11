@@ -24,20 +24,20 @@ document.addEventListener('DOMContentLoaded', function () {
   <li>
     <img src="resources/images/page-7.png" alt="Sumário" class="summary-image">
   </li>
-  <li><a href="#" data-page="9" class="summary-link" aria-label="Ir para página 9" style="top:11.2%; left: 0; width: 100%; height: 4%;"></a></li>
-  <li><a href="#" data-page="19" class="summary-link" aria-label="Ir para página 19" style="top: 18.2%; left: 0; width: 100%; height: 4%;"></a></li>
-  <li><a href="#" data-page="24" class="summary-link" aria-label="Ir para página 24" style="top: 23.5%; left: 0; width: 100%; height: 4%;"></a></li>
-  <li><a href="#" data-page="31" class="summary-link" aria-label="Ir para página 31" style="top: 29%; left: 0; width: 100%; height: 4%;"></a></li>
-  <li><a href="#" data-page="36" class="summary-link" aria-label="Ir para página 36" style="top: 34.3%; left: 0; width: 100%; height: 4%;"></a></li>
-  <li><a href="#" data-page="45" class="summary-link" aria-label="Ir para página 45" style="top: 39.6%; left: 0; width: 100%; height: 4%;"></a></li>
-  <li><a href="#" data-page="54" class="summary-link" aria-label="Ir para página 54" style="top: 45%; left: 0; width: 100%; height: 4%;"></a></li>
-  <li><a href="#" data-page="63" class="summary-link" aria-label="Ir para página 63" style="top: 50.3%; left: 0; width: 100%; height: 4%;"></a></li>
-  <li><a href="#" data-page="69" class="summary-link" aria-label="Ir para página 69" style="top: 55.6%; left: 0; width: 100%; height: 4%;"></a></li>
-  <li><a href="#" data-page="77" class="summary-link" aria-label="Ir para página 77" style="top: 60.9%; left: 0; width: 100%; height: 4%;"></a></li>
-  <li><a href="#" data-page="87" class="summary-link" aria-label="Ir para página 87" style="top: 66.3%; left: 0; width: 100%; height: 6%;"></a></li>
-  <li><a href="#" data-page="95" class="summary-link" aria-label="Ir para página 95" style="top: 74.2%; left: 0; width: 100%; height: 4%;"></a></li>
-  <li><a href="#" data-page="102" class="summary-link" aria-label="Ir para página 102" style="top: 79.5%; left: 0; width: 100%; height: 4%;"></a></li>
-  <li><a href="#" data-page="110" class="summary-link" aria-label="Ir para página 110" style="top: 86.6%; left: 0; width: 100%; height: 4%;"></a></li>
+  <li><a href="#" data-page="9" class="summary-link" aria-label="Ir para página 8" style="top:9%; left: 0; width: 100%; height: 4%;"></a></li>
+  <li><a href="#" data-page="19" class="summary-link" aria-label="Ir para página 18" style="top: 16.4%; left: 0; width: 100%; height: 4%;"></a></li>
+  <li><a href="#" data-page="24" class="summary-link" aria-label="Ir para página 24" style="top: 22%; left: 0; width: 100%; height: 4%;"></a></li>
+  <li><a href="#" data-page="31" class="summary-link" aria-label="Ir para página 31" style="top: 27.6%; left: 0; width: 100%; height: 4%;"></a></li>
+  <li><a href="#" data-page="36" class="summary-link" aria-label="Ir para página 36" style="top: 33.3%; left: 0; width: 100%; height: 4%;"></a></li>
+  <li><a href="#" data-page="45" class="summary-link" aria-label="Ir para página 44" style="top: 39%; left: 0; width: 100%; height: 4%;"></a></li>
+  <li><a href="#" data-page="54" class="summary-link" aria-label="Ir para página 54" style="top: 44.7%; left: 0; width: 100%; height: 4%;"></a></li>
+  <li><a href="#" data-page="63" class="summary-link" aria-label="Ir para página 63" style="top: 50.1%; left: 0; width: 100%; height: 4%;"></a></li>
+  <li><a href="#" data-page="69" class="summary-link" aria-label="Ir para página 69" style="top: 55.7%; left: 0; width: 100%; height: 4%;"></a></li>
+  <li><a href="#" data-page="77" class="summary-link" aria-label="Ir para página 76" style="top: 61.4%; left: 0; width: 100%; height: 4%;"></a></li>
+  <li><a href="#" data-page="87" class="summary-link" aria-label="Ir para página 86" style="top: 67%; left: 0; width: 100%; height: 6%;"></a></li>
+  <li><a href="#" data-page="95" class="summary-link" aria-label="Ir para página 94" style="top: 75.3%; left: 0; width: 100%; height: 4%;"></a></li>
+  <li><a href="#" data-page="102" class="summary-link" aria-label="Ir para página 102" style="top: 80.8%; left: 0; width: 100%; height: 4%;"></a></li>
+  <li><a href="#" data-page="110" class="summary-link" aria-label="Ir para página 110" style="top: 88.2%; left: 0; width: 100%; height: 4%;"></a></li>
 </ul>
         `
       } else {

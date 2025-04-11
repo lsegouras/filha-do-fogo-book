@@ -1,4 +1,9 @@
 // main.js
+
+window.addEventListener('load', () => {
+  document.getElementById('book-container').style.visibility = 'visible'
+})
+
 document.addEventListener('DOMContentLoaded', function () {
   const itemsLinks = document.querySelectorAll('#items a')
   const prevBtn = document.getElementById('prev-btn')
@@ -114,7 +119,6 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
     function adjustBookSize() {
-      const container = document.getElementById('book-container')
       const book = document.getElementById('book')
 
       const maxWidth = window.innerWidth * 0.7

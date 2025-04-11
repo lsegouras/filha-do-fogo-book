@@ -8,7 +8,7 @@
 
 body {
   font-family: Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f1c897;
+  background-color: #eda250;
   color: #333;
   overflow: hidden;
 }
@@ -113,6 +113,7 @@ body {
   height: 100vh;
   background-color: #eda250;
   overflow: auto;
+  visibility: hidden;
 }
 
 #book {

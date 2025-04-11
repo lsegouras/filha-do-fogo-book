@@ -94,6 +94,25 @@ document.addEventListener('DOMContentLoaded', function () {
   function init() {
     createPages()
 
+    // Initialize turn.js
+    flipbook.turn({
+      display: 'single',
+      acceleration: true,
+      gradients: !$.isTouch,
+      elevation: 50,
+      duration: 1000,
+      width: 600,
+      height: 840,
+      pages: totalPages + 2,
+      when: {
+        turning: function (e, page) {
+          currentPage =
+            page === 1 ? 0 : page === totalPages + 2 ? totalPages + 1 : page - 1
+          updateActiveLink()
+        },
+      },
+    })
+
     function adjustBookSize() {
       const container = document.getElementById('book-container')
       const book = document.getElementById('book')
@@ -120,26 +139,7 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('load', adjustBookSize)
     window.addEventListener('resize', adjustBookSize)
 
-    // Initialize turn.js
-    flipbook.turn({
-      display: 'single',
-      acceleration: true,
-      gradients: !$.isTouch,
-      elevation: 50,
-      duration: 1000,
-      width: 600,
-      height: 840,
-      pages: totalPages + 2,
-      when: {
-        turning: function (e, page) {
-          currentPage =
-            page === 1 ? 0 : page === totalPages + 2 ? totalPages + 1 : page - 1
-          updateActiveLink()
-        },
-      },
-    })
-
-    setTimeout(() => showPage(0), 100)
+    showPage(0)
 
     itemsLinks.forEach((link) => {
       link.addEventListener('click', function (e) {
